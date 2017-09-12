@@ -1,3 +1,38 @@
 .editToggle {
 	display: none;
 }
+
+body {
+	background-color: black;
+}
+
+h1 {
+	color: white;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	color: white;
+}
+
+button {
+	background: #d9344a;
+	background-image: -webkit-linear-gradient(top, #d9344a, #b82baf);
+	background-image: -moz-linear-gradient(top, #d9344a, #b82baf);
+	background-image: -ms-linear-gradient(top, #d9344a, #b82baf);
+	background-image: -o-linear-gradient(top, #d9344a, #b82baf);
+	background-image: linear-gradient(to bottom, #d9344a, #b82baf);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.container {
+	text-align: center;
+}
