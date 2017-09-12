@@ -19,7 +19,7 @@ export class AppComponent {
   updateText; 
   updateAuthor;
   newQuote:quote;
-	editToggle = false;
+
 	constructor(){
 		this.newQuote = new quote();
 	}
@@ -34,7 +34,7 @@ export class AppComponent {
 onSubmit(){
 	if(this.newQuote){
 		var entry = {
-			'update': true,
+			'update': false,
       'text': this.newQuote.text,
 			'author': this.newQuote.author
 		};
@@ -49,14 +49,12 @@ onSubmit(){
     }
   }
 
-  onsubmit(i){
-  	 if(this.updateText && this.updateAuthor){
-    var entry = {
-      'update': true,
-      'text': this.updateText,
-      'author': this.updateAuthor
-    };
-    this.comments.push(entry)
+  onUpdate(i){
+  	 this.comments[i].update=false;
+    this.comments[i].text= this.updateText;
+    this.comments[i].author=this.updateAuthor;
+    }
+   
   }
-}
-}
+
+
